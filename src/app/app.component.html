@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <h4>Cities</h4>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Sydney">Sydney</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Melbourne">Melbourne</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Brisbane">Brisbane</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Adelaide">Adelaide</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Perth">Perth</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Ballarat">Ballarat</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Bendigo">Bendigo</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Albany">Albany</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Rockhampton">Rockhampton</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Mackay">Mackay</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Kalgoorlie">Kalgoorlie</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Bunbury">Bunbury</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Wodonga">Wodonga</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Gladstone">Gladstone</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Mildura">Mildura</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Devonport">Devonport</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Queanbeyan">Queanbeyan</button>
+                <button type="button" class="btn btn-primary" (click)="onClick($event)" id="Sheppartontest">Shepparton</button>
+            </div><br>
+        </div>
+
+        <div class="col-sm-9">
+            <h4>Weather Data</h4>
+            <hr>
+            <h2>{{selectedCity}}</h2>
+
+
+            <div class="input-group">
+                <span class="input-group-addon">Position</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="position">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-addon">Time</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="time">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-addon">Conditions</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="condition">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-addon">Temperature</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="temperature">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-addon">Pressure</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="pressure">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-addon">Humidity</span>
+                <input id="msg" type="text" class="form-control" name="msg" [(ngModel)]="humidity">
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid">
+    <p>Footer Text</p>
+</footer>
