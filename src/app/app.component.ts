@@ -27,7 +27,6 @@ export class AppComponent  {
 
 
 onClick(event:any) {
-    //this.time= new Date();
     var idAttr = event.srcElement.attributes.id;
     this.selectedCity = idAttr.nodeValue;
     //console.log(this.selectedCity);
@@ -35,7 +34,7 @@ onClick(event:any) {
 
     this.http.get('http://api.openweathermap.org/data/2.5/weather?q='+this.selectedCity+'&APPID=2b3d2606d96d4c60fc613f9cfbfabda2').map((res:Response) => res.json())
       .subscribe(
-        data => { this.result = data, this.position1 = this.result.coord.lat, this.position2 = this.result.coord.lon,this.position = "Lat: "+this.position1+' , Lon: '+this.position2, this.condition = this.result.weather[0].main, this.temperature = this.result.main.temp+" F", this.pressure = this.result.main.pressure+ " hPa", this.humidity = this.result.main.humidity+ " %"},
+        data => { this.result = data, this.position1 = this.result.coord.lat, this.position2 = this.result.coord.lon,this.position = "Lat: "+this.position1+' , Lon: '+this.position2, this.condition = this.result.weather[0].main, this.temperature = this.result.main.temp+" K", this.pressure = this.result.main.pressure+ " hPa", this.humidity = this.result.main.humidity+ " %"},
         err => console.error(err),
         () => console.log(this.pressure)
         
